@@ -25,6 +25,7 @@ import os
 import glob
 
 from sklearn.neighbors import KNeighborsClassifier
+from dominantcolors import get_image_dominant_colors
 
 
 
@@ -48,7 +49,6 @@ for train_name in train_names:
 		grayImg = img_as_ubyte(color.rgb2gray(rgbImg))
 		entrop1=entropy(grayImg)
 		myimg = cv2.imread(file)
-		from dominantcolors import get_image_dominant_colors
 		dominant_colors = get_image_dominant_colors(image_path=file,num_colors=4)
 		entropy2 = measure.shannon_entropy(myimg)
 		final=np.array([entrop1,entropy2])
