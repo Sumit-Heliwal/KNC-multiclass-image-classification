@@ -10,5 +10,5 @@ It has 5 classes as :-
 5)Murrum
 It has 6 features in a vector i.e. 4 histogram colours and 2 entropy(using different functions)
 It uses KNN Classifer for classification by measuring the distance between the features of dataset and sample image.
-The data is recorded in aa file for transfer learning.
+The data is recorded in a file for reducing runtime.
 The program is splitted in 2 parts i.e. training and testing.
